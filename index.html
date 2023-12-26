@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width:800px )" href="table.css">
     <link rel="stylesheet" media="screen and (max-width:530px )" href="phone.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#contact">Contact me</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <div class="main">
-            <h1 class="heading">I AM <br>MIDHULA K P</h1>
-            <button class="btn"> Hire me </button>
-        </div>
-    </section>
-    <section id="about">
+
+    <header>
+        <nav class="navbar container-fluid">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main container" id="home">
+        <h1 class="heading">I AM <br>MIDHULA K P</h1>
+        <button class="btn"> Hire me </button>
+    </main>
+    
+    <section id="about" class="container">
         <h1 class="heading">ABOUT ME</h1>
         <div id="pic">
             <img src="./avatar.png"/>
@@ -46,10 +49,10 @@
             <img src="./img/Untitled.png"/>
         </div>
     </section>   
-    <section id="service">
+    <section id="service" class="container">
         <h1 class="heading">SERVICES</h1>
         <div class="row">
-            <div class="box">
+            <div class="box col card">
                 <h1 class="heading">UI/UX design</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga cupiditate, tenetur quasi quibusdam placeat unde aperiam aliquid ea autem perferendis, mollitia dolores obcaecati quia est temporibus. Omnis corporis quis velit!</p>
             </div>
@@ -63,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="container">
         <h1 class="heading">CONTACT ME</h1>
         <form action="" class="form">
             <input type="text" name="name" class="input" placeholder="Enter Your Name"> 
@@ -72,5 +75,7 @@
             <input type="submit" value="SEND" id="send"> 
         </form>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
